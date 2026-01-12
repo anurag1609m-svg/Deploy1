@@ -263,11 +263,11 @@ public class ProductController {
 		  return" record updated";
 	  }
 	  
-	  @PutMapping(value="product/{name}")
-	  public String productupdate(@PathVariable ("name") String name,
-			                      @RequestBody Product ref) {
-		  
-		  ps.updatebyname(name,ref);
-		  return" record updated";
-	  }
+//	  @PutMapping(value="product/{name}")
+//	  public String productupdate(@PathVariable ("name") String name,
+//			                      @RequestBody Product ref) {
+//		  
+////		  ps.updatebyname(name,ref);
+////		  return" record updated";
+//	  }
 }
