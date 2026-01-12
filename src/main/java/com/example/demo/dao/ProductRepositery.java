@@ -58,7 +58,7 @@ public interface ProductRepositery extends JpaRepository<Product, Integer> {
 	  List<Product> findByNameNotLike (String name);
 	  
 	  
-	  List<Product> findByNameIsLike%_a (String name);
+//	  List<Product> findByNameIsLike%_a (String name);
 	  
 //======================== Delete patterns =================================
 	  
