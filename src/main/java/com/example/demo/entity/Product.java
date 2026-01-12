@@ -22,9 +22,9 @@ public class Product {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Product(int id, String name, String company, double price) {
+	public Product( String name, String company, double price) {
 		super();
-		this.id = id;
+		//id hatai kyuki    product  add karenege toh id nhi denge kyuki id auto genreted h toh   jb add hoga toh constructor me call hoga or constructor me id bhi h mtlb total 4 chije 
 		this.name = name;
 		this.company = company;
 		this.price = price;
