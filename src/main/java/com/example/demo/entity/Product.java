@@ -14,7 +14,7 @@ public class Product {
 	private int id;
 	
 	@Column
-	
+	private String imgurl;
 	private String name;
 	private  String company;
 	private double price;
@@ -22,12 +22,21 @@ public class Product {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Product( String name, String company, double price) {
+	public Product( String url,String name, String company, double price) {
 		super();
 		//id hatai kyuki    product  add karenege toh id nhi denge kyuki id auto genreted h toh   jb add hoga toh constructor me call hoga or constructor me id bhi h mtlb total 4 chije 
+		this.imgurl=url;
 		this.name = name;
 		this.company = company;
 		this.price = price;
+	}
+	
+	
+	public String getImgurl() {
+		return imgurl;
+	}
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
 	}
 	public int getId() {
 		return id;
